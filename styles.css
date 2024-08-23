@@ -1,0 +1,300 @@
+body {
+    background-color: white; /* Sets the background color to white for the border */
+    margin: 0; /* Removes default margin */
+    padding: 20px; /* Creates the white border illusion */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    overflow: auto; /* Scroll bar on the body */
+}
+
+.main-content {
+    background-color: rgb(245, 241, 237); 
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    overflow: auto;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Optional: vertically center the child elements */
+}
+
+.right-wrapper {
+    text-align: right; /* Aligns child elements to the right */
+    padding: 20px;
+}
+
+.left-wrapper {
+    text-align: left; /* Aligns child elements to the left */
+    padding: 20px;
+}
+
+.btn-menu {
+    border: 4px solid  rgb(21, 20, 28);
+    border-radius: 10px;
+    background-color: rgb(245, 241, 237);
+    color:  rgb(21, 20, 28);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+.btn-menu:hover {
+    border: 4px solid rgb(162, 125, 211);
+    border-radius: 10px;
+    background-color: rgb(245, 241, 237);
+    color: rgb(162, 125, 211);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.btn-menu:active {
+    border: 4px solid rgb(162, 125, 211);
+    border-radius: 10px;
+    background-color: rgb(245, 241, 237);
+    color:  rgb(162, 125, 211);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.links img { /* using "img" targets any element that is a child of an element with the class name */
+    width: 60px; /* Specify size*/
+    height: auto; /* Maintain the aspect ratio */
+
+}
+
+.handwriting {
+    font-family: "Delicious Handrawn";
+    font-weight: normal;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 130px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-20deg);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-family: 'Quando', Fallback, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-weight: normal;
+    color: rgb(21, 20, 28);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.dot {
+    color: rgb(162, 125, 211);
+}
+
+.subtext {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(21, 20, 28);
+    text-align: left;
+    margin-top: 5px;
+}
+
+.char-wrapper {
+    position: relative;
+}
+
+.sqr-wrapper {
+    position: absolute;
+}
+
+#sqr {
+    background-image: url(sqr-background2.png);
+    position: absolute;
+    width: 372px;
+    height: 571px;
+    box-sizing: border-box;   
+}
+
+#char {
+    position: absolute;
+}
+
+#arm {
+    position: relative;
+    animation-name: wave;
+    transform-origin: 107px 289px;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(12deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.skills-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+
+.skills-text-wrapper {
+    
+    border-radius: 25px;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    text-align: left;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.skills-text-wrapper-2 {
+    
+    border-radius: 25px;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    text-align: left;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.skills-text-wrapper-3 {
+    
+    border-radius: 25px;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    text-align: left;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    justify-content: center;
+    max-width: 600px;
+}
+
+
+.parallax-wrapper {
+    width: 137px;
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto; /* Center the block */
+    
+}
+
+/*
+.cursor {
+    background-image: url(cursor-icon.png);
+    
+    width: 137px;
+    height: 92px;  
+}
+
+
+.paint {
+    background-image: url(paint-icon.png);
+    
+    width: 137px;
+    height: 92px; 
+}
+
+.spark {
+    background-image: url(light-icon.png);
+    
+    width: 137px;
+    height: 92px;
+}
+ */
+
+.icon {
+    background-image: url(code-icon2.png);
+    text-align: center;
+    width: 137px;
+    height: 92px;
+    margin: auto; /* Center the block */
+    top: 10px;
+}
+
+.icon2 {
+    background-image: url(creative-icon.png);
+    text-align: center;
+    width: 137px;
+    height: 92px;
+    margin: auto; /* Center the block */
+    top: 10px;
+}
+
+
+.icon3 {
+    background-image: url(learn-icon.png);
+    text-align: center;
+    width: 137px;
+    height: 92px;
+    margin: auto; /* Center the block */
+    top: 10px;
+}
+
+.menu {
+    padding: 50;
+}
+
+h2 {
+    font-family: 'Quando', Fallback, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(21, 20, 28);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(21, 20, 28);
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.menu-text {
+    font-family: 'Quando', Fallback, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(21, 20, 28);
+    text-align: left;
+    text-decoration: none;
+    
+}
+
+.menu-text:hover {
+    color: rgb(162, 125, 211);
+}
